@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV Solutions | BCSAfrica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Custom styles for AV page */
+        .service-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/av-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        
+        .tech-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .tech-card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        /* Fix logo size in footer */
+        footer .navbar-brand img {
+            height: 40px; /* Adjusted logo size */
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .service-hero {
+                padding: 80px 0;
+            }
+            
+            .feature-icon {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.jpg" alt="BCSAfrica Logo" style="height: 40px;"> <!-- Fixed logo size -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#clients">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Professional AV Solutions</h1>
+            <p class="lead">Enhancing communication and collaboration through superior audio-visual technology</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">Transform Your Spaces</h2>
+                    <p>BCSAfrica delivers cutting-edge audio-visual solutions designed to meet the demands of modern businesses, educational institutions, and entertainment venues. Our systems integrate seamlessly to provide exceptional audio and visual experiences.</p>
+                    <p>From boardroom presentations to large-scale conference systems, we design, install, and maintain AV solutions that impress and perform reliably day after day.</p>
+                    <a href="../index.html#contact" class="btn read-more-btn mt-3">Request a Demo</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../assets/images/tbus.jpg" alt="AV System Installation" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Our AV Solutions</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Conference Systems</h3>
+                    <p>Professional meeting room solutions with crystal clear audio and video conferencing capabilities.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Public Address</h3>
+                    <p>Clear and reliable sound systems for announcements and background music in any environment.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Digital Signage</h3>
+                    <p>Dynamic display solutions for information, advertising, and wayfinding.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Walls</h3>
+                    <p>Immersive large-format displays for control rooms, lobbies, and command centers.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Home Theater</h3>
+                    <p>Premium entertainment systems for residential properties and private screening rooms.</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Smart Lighting</h3>
+                    <p>Automated lighting control systems that integrate with your AV setup.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Showcase -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Technology Partners</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="tech-card card">
+                        <img src="../assets/images/kramer.png" class="card-img-top" alt="Conference System">
+                        <div class="card-body">
+                            <h5 class="card-title">Conference Systems</h5>
+                            <p class="card-text">Professional solutions from leading brands like Crestron, Poly, and Logitech with 4K cameras and beamforming microphones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="tech-card card">
+                        <img src="../assets/images/digital.jpg" class="card-img-top" alt="Digital Signage">
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Signage</h5>
+                            <p class="card-text">High-brightness displays and content management systems for effective communication.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="tech-card card">
+                        <img src="../assets/images/TOA.jpg" class="card-img-top" alt="Audio Systems">
+                        <div class="card-body">
+                            <h5 class="card-title">Professional Audio</h5>
+                            <p class="card-text">Premium sound systems from Bose, JBL, and QSC for perfect acoustics in any space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Upgrade Your AV Experience?</h2>
+            <p class="lead mb-4">Contact us today for a free consultation and system demonstration</p>
+            <a href="../index.html#contact" class="btn btn-light btn-lg">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/images/logo.jpg" alt="BCSAfrica Logo" style="height: 40px;"> <!-- Fixed logo size -->
+                    </a>
+                    <p class="mt-3">BCSAfrica is your trusted partner for electronic security, IT services, and AV solutions across Africa. We deliver excellence through innovation and customer-focused service.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <a href="../index.html">Home</a>
+                        <a href="../index.html#about">About Us</a>
+                        <a href="../index.html#services">Services</a>
+                        <a href="../index.html#clients">Clients</a>
+                        <a href="../index.html#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Services</h5>
+                        <a href="service-security.html">Electronic Security</a>
+                        <a href="service-it.html">IT Services</a>
+                        <a href="service-av.html">AV Solutions</a>
+                        <a href="#">Support & Maintenance</a>
+                        <a href="#">Consulting</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center copyright">
+                <p>&copy; 2023 BCSAfrica Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

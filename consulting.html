@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Services | BCSAfrica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .service-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/consulting-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 0;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        
+        .consulting-card {
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            height: 100%;
+            border-left: 4px solid var(--primary-blue);
+        }
+        
+        .consulting-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .process-step {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 30px;
+        }
+        
+        .process-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+               <img src="../assets/images/logo.jpg" alt="BCSAfrica Logo" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#clients">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Service Hero Section -->
+    <section class="service-hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Consulting Services</h1>
+            <p class="lead">Strategic expertise for your security and technology challenges</p>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">Expert Guidance for Your Business</h2>
+                    <p>BCSAfrica's consulting services provide strategic insights and technical expertise to help you navigate complex security, IT, and technology challenges. Our consultants bring decades of combined experience across multiple industries.</p>
+                    <p>Whether you're planning a new system implementation, upgrading existing infrastructure, or developing comprehensive security strategies, our consultants become an extension of your team.</p>
+                    <a href="../index.html#contact" class="btn read-more-btn mt-3">Request Consultation</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../assets/images/consulting-meeting.jpg" alt="Consulting Meeting" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulting Areas Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Consulting Specialties</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card consulting-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Security Strategy</h3>
+                            <p>Comprehensive risk assessments, vulnerability analyses, and layered security solutions tailored to your specific threats and business requirements.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-primary me-2"></i> Physical security audits</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Cybersecurity integration</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Compliance frameworks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card consulting-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>IT Infrastructure</h3>
+                            <p>Future-proof technology roadmaps, network architecture design, and system integration strategies for optimal performance and scalability.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-primary me-2"></i> Technology assessments</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Cloud migration planning</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Disaster recovery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card consulting-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <h3>System Design</h3>
+                            <p>End-to-end design of integrated security and technology systems with detailed specifications and implementation roadmaps.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-primary me-2"></i> Requirements analysis</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Solution architecture</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Technology selection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card consulting-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h3>Compliance</h3>
+                            <p>Guidance on meeting regulatory requirements and industry standards for security and data protection.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-primary me-2"></i> GDPR, POPIA readiness</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Industry-specific regulations</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Certification preparation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card consulting-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Technology ROI</h3>
+                            <p>Cost-benefit analyses and total cost of ownership assessments to ensure optimal technology investments.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-primary me-2"></i> Budget planning</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Vendor evaluation</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Phased implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card consulting-card h-100 p-3">
+                        <div class="card-body">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Staff Training</h3>
+                            <p>Customized training programs to maximize your team's effectiveness with new technologies and security protocols.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-primary me-2"></i> Needs assessment</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Curriculum development</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Certification programs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consulting Process -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Consulting Methodology</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h3>Discovery & Assessment</h3>
+                        <p>We begin with in-depth interviews, site surveys, and system audits to fully understand your current environment, challenges, and business objectives.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h3>Analysis & Planning</h3>
+                        <p>Our team analyzes findings, identifies gaps and opportunities, and develops strategic recommendations with clear implementation roadmaps.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h3>Solution Design</h3>
+                        <p>We create detailed technical specifications, system architectures, and vendor-agnostic technology recommendations.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <h3>Implementation Support</h3>
+                        <p>Our consultants provide ongoing guidance during execution, including vendor selection, project management, and quality assurance.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">5</div>
+                        <h3>Review & Optimization</h3>
+                        <p>We evaluate implemented solutions and recommend adjustments to ensure they continue meeting your evolving business needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Consulting Success Stories</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="text-primary">Financial Institution Security Overhaul</h3>
+                            <h4 class="text-muted">Regional Bank</h4>
+                            <p class="mt-3">Conducted comprehensive security assessment across 12 branches, identified critical vulnerabilities, and designed phased implementation plan that improved security posture by 60% while staying within budget constraints.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">Risk Assessment</span>
+                                <span class="badge bg-primary me-2">Access Control</span>
+                                <span class="badge bg-primary">Compliance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="text-primary">Manufacturing Facility Technology Upgrade</h3>
+                            <h4 class="text-muted">Industrial Client</h4>
+                            <p class="mt-3">Developed integrated security and operations technology roadmap that connected CCTV, access control, and IoT sensors with production systems, reducing security incidents by 45% and improving operational efficiency.</p>
+                            <div class="mt-3">
+                                <span class="badge bg-primary me-2">System Integration</span>
+                                <span class="badge bg-primary me-2">IoT Solutions</span>
+                                <span class="badge bg-primary">Technology Roadmap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Transform Your Technology Strategy?</h2>
+            <p class="lead mb-4">Our consultants are ready to help you solve complex challenges and achieve your business objectives</p>
+            <a href="../index.html#contact" class="btn btn-light btn-lg">Schedule Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="../assets/images/logo.png" alt="BCSAfrica Logo" style="height: 50px; margin-bottom: 20px;">
+                    <p>BCSAfrica is your trusted partner for electronic security, IT services, and AV solutions across Africa. We deliver excellence through innovation and customer-focused service.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <a href="../index.html">Home</a>
+                        <a href="../index.html#about">About Us</a>
+                        <a href="../index.html#services">Services</a>
+                        <a href="../index.html#clients">Clients</a>
+                        <a href="../index.html#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Services</h5>
+                        <a href="service-security.html">Electronic Security</a>
+                        <a href="service-it.html">IT Services</a>
+                        <a href="service-av.html">AV Solutions</a>
+                        <a href="service-maintenance.html">Support & Maintenance</a>
+                        <a href="service-consulting.html">Consulting</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <div class="footer-links">
+                        <h5>Legal</h5>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center copyright">
+                <p>&copy; 2023 BCSAfrica Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
